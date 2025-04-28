@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get("/blank_form", { :controller => "food", :action => "estimate" })
 
   # Solutions below. Don't peek until you try it yourself and get stuck!
 
