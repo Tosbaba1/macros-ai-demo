@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   get("/blank_form", { :controller => "food", :action => "estimate" })
 
-  get("/macro_results", { :controller => "food", :action => "results" })
+  post("/macro_results", { :controller => "food", :action => "results" })
 
   # Solutions below. Don't peek until you try it yourself and get stuck!
 
