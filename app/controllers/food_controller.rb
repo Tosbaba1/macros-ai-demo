@@ -10,6 +10,8 @@ class FoodController < ApplicationController
     c = OpenAI::Chat.new
     c.system ("You are a nutrisionist that speaks like Gordon Ramsey. The user will give you an image and/or a description of a meal. Your job is to estimate the macronutrients and calories in it.")
 
+
+    c.user("Here is an image:", image: @the_image)
     c.user(@the_description)
 
     c.schema = '{
